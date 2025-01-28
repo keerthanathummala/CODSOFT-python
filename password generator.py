@@ -3,7 +3,7 @@ import string #Importing string module
 import time #Importing time module
 
 def generate_key(length): #creating a function to generate password of desired length
-    syntax = string.ascii_letters(9) + string.digits + string.punctuation #generates password consisting alphabets,digitsang punctuations
+    syntax = string.ascii_letters + string.digits + string.punctuation #generates password consisting alphabets,digitsang punctuations
     password = ''.join(random.choice(syntax) for i in range(length)) #generating password
     return password
 
